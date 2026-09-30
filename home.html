@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <div class="logo">
+        ♡For my Wife
+    </div>
+
+    <nav class="main-nav">
+        <a href="home.html">Home</a>
+        <a href="letter.html">Letter</a>
+        <a href="playlist.html">Song Playlist</a>
+        <a href="foryou.html">For You</a>
+    </nav>
+
+    <nav class="exit-nav">
+        <a href="index.html">EXIT</a>
+    </nav>
+</header>
+
+
+
+<main>
+
+    <section class="hometitle">
+        <h2>In all our lives, I will be with you</h2>
+    </section>
+
+    <section class="hero">
+
+        <div class="hero-top">
+
+            <div class="hero-photo">
+                <span class="crown">👑</span>
+                <img src="assets/images/WifeImg.jpg" alt="My Wife">
+            </div>
+
+            <div class="hero-text">
+                <p class="small-title">
+                    A Little Something For You
+                </p>
+                <h1>
+                    Happy Birthday and Happy 3rd Monthsary
+                    <br>
+                    <span>My Wife♡</span>
+                </h1>
+                <p class="home-message">
+                    Today is all about you.
+                    I made this website just for you,
+                    as a simple reminder kung gaano ikaw ka-special sakin.
+                    Iloveyou so much bebe ko mwah
+                </p>
+            </div>
+
+        </div>
+
+        <div class="second-photos">
+
+            <div class="second-photo photo-left">
+                <img src="assets/images/homeImg1.jpg" alt="My Wife">
+            </div>
+
+            <div class="second-photo photo-right">
+                <img src="assets/images/homeImg2.jpg" alt="My Wife">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+</main>
+
+
+
+<footer>
+    <p>Made by Jevsson, for my wife Xenia</p>
+    <span>Happy Birthday & Happy Monthsary ♡</span>
+</footer>
+
+
+
+</body>
+</html>
+
+
+<style>
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* HOME CONTENT*/
+
+main {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+.hometitle {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+.hometitle h2 {
+    color: #FF788D;
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.hero-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/* SMALL TITLE */
+
+.small-title {
+    color: #F3E6D5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* MAIN TITLE */
+
+.hero-text h1 {
+    font-size: clamp(32px, 6vw, 75px);
+    line-height: 1.1;
+    color: #FF788D;
+}
+
+.hero-text h1 span {
+    color: #030303;
+}
+
+
+.hero-text { 
+    max-width: 500px;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    background: rgba(3, 1, 2, 0.521);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(14, 13, 13, 0.61);
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(61, 36, 48, 0.5);
+}
+
+.crown {
+    position: absolute;
+    top: -20px;
+    right: 4px;
+    font-size: clamp(28px, 4vw, 48px);
+    transform: rotate(15deg);
+    z-index: 2;
+    filter: drop-shadow(2px 3px 2px rgba(0,0,0,0.35));
+    pointer-events: none;
+}
+
+
+
+/* MESSAGE */
+body{
+    background-image: url(assets/images/homebg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.home-message {
+    color: #ffffff;
+    font-size: clamp(14px, 1.5vw, 16px);
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+
+
+
+/* HER PHOTO */
+
+.hero-photo {
+    position: relative;
+    width: clamp(220px, 60vw, 300px);
+    height: clamp(260px, 70vw, 360px);
+    padding: 12px;
+    background: white;
+    border: 3px solid #3d2430;
+    box-shadow: 10px 10px 0 #d98ba8;
+    transform: rotate(-3deg);
+    animation: photoFloat 3s ease-in-out infinite;
+    margin-top: 20px;
+    flex-shrink: 0;
+}
+
+
+/* PHOTO */
+
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+
+/* PHOTO ANIMATION */
+
+@keyframes photoFloat {
+
+    0% {
+        transform: rotate(-3deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(2deg) translateY(-10px);
+    }
+
+    100% {
+        transform: rotate(-3deg) translateY(0);
+    }
+
+}
+
+.second-photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.second-photo {
+    width: clamp(120px, 30vw, 180px);
+    height: clamp(150px, 37vw, 220px);
+    padding: 8px;
+    background: white;
+    border: 2px solid #3d2430;
+    box-shadow: 6px 6px 0 #d98ba8;
+    transition: transform 0.3s ease;
+}
+
+.second-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.photo-left {
+    transform: rotate(-4deg);
+}
+
+.photo-right {
+    transform: rotate(4deg);
+}
+
+.second-photo:hover {
+    transform: scale(1.05) rotate(0deg);
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+    main {
+        padding: 30px 16px;
+    }
+
+    .hero-top {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .hero-photo {
+        margin-top: 0;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .second-photos {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    max-width: 1300px;
+  }
+
+  .hero-top {
+    gap: 80px;
+  }
+
+  .hero-photo {
+    width: 340px;
+    height: 400px;
+  }
+
+  .hometitle h2 {
+    font-size: 34px;
+  }
+}
+</style>
